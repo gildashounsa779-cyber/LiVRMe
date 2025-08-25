@@ -1,0 +1,267 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+
+header {
+  background: linear-gradient(to right, #e8f5e9, #2e7d32);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1 { color: #2C3E50; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { text-decoration: none; color: #333; font-weight: 500; }
+nav a:hover { color: #408be0; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #1b5e20;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 5%;
+  background: linear-gradient(135deg, #27ae60 40%, #2ecc71 100%);
+  color: #fff;
+}
+
+.hero-text h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.hero-text p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+.hero-text .cta {
+  background: #fff; color: #27ae60;
+  padding: 0.8rem 1.5rem; border-radius: 8px;
+  font-weight: bold; text-decoration: none;
+}
+.hero-img img { width: 100%; border-radius: 12px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 2rem;
+}
+
+.qualites {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.089);
+  transition: transform 0.3s;
+}
+
+.qualites .item:hover,
+.fonctionnement .etape:hover,
+.temoignages .avis .item:hover {
+  transform: translateY(-5px);
+}
+
+.qualites h2 { margin-bottom: 2rem; font-size: 2rem; color: #2c3e50; text-align: center; }
+
+/* ETAPES */
+.steps {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.steps h3 { margin-bottom: 2rem; font-size: 2rem; color: #2c3e50; }
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 2rem;
+}
+
+.step {
+  background: #fff; padding: 2rem; border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.step:hover { transform: translateY(-5px); }
+
+.step img { width: 60px; margin-bottom: 1rem; }
+
+/* AVIS */
+.reviews {
+  background: #27ae60; color: #fff;
+  padding: 3rem 5%;
+  text-align: center;
+  width: 100vw; /* prend toute la largeur de la fenêtre */
+  position: relative;
+  text-align: center;
+  box-shadow: 15px 0 15px rgba(0, 0, 0, 0.089);
+}
+
+  .review {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #093fb4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+}
+
+.reviews h3 { margin-bottom: 2rem; font-size: 2rem; }
+
+.carousel {
+  display: flex; overflow-x: auto; gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slider-track {
+  width: fit-content;
+  display: flex;
+  animation: scrollImages 30s  alternate infinite;
+}
+
+/* Animation qui défile toutes les 2s une image */
+@keyframes scrollImages {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(-250%); }
+}
+
+.carousel::-webkit-scrollbar { display: none; }
+
+.review {
+  flex: 0 0 300px; scroll-snap-align: start;
+  background: #2ecc71; padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.review p { margin-bottom: 1rem; font-style: italic; }
+
+.review span { font-weight: bold; }
+
+/* CTA finale */
+.cta-section {
+  text-align: center; padding: 3rem 5%;
+}
+
+.cta-section h3 { margin-bottom: 1rem; font-size: 2rem; color: #2c3e50; }
+
+.cta-section a {
+  display: inline-block; margin-top: 1rem;
+  background: #27ae60; color: #fff;
+  padding: 1rem 2rem; border-radius: 8px;
+  text-decoration: none; font-weight: bold;
+}
+
+footer {
+  background: #4e4e4e; 
+  color: #fff;
+  text-align: center; 
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Tablettes (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    width: 80%;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+}
+
+/* Mobiles (max-width: 576px) */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
