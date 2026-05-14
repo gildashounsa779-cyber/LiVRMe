@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiVRMe — L'infrastructure numérique de la livraison urbaine en Afrique</title>
+  <meta name="description" content="LiVRMe est la plateforme SaaS qui digitalise la gestion de livraison pour les agences en Afrique francophone. Dashboard, livreurs, commandes, White Label." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="acceuil.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="LiVRMe2.png" alt="LiVRMe"/>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#probleme">Pourquoi LiVRMe</a></li>
+      <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+      <li><a href="#comment">Comment ça marche</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#inscription" class="nav-cta">Commencer gratuitement →</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 Plateforme SaaS — Bénin & Afrique francophone</div>
+      <h1>
+        Gérez toute votre
+        <span class="accent"> livraison</span>
+        <span class="line2">depuis un seul écran.</span>
+      </h1>
+      <p class="hero-sub">
+        LiVRMe digitalise la gestion complète de votre agence de livraison — livreurs, commandes, clients, tarifs — à votre image, sans complication.
+      </p>
+      <div class="hero-actions">
+        <a href="#inscription" class="btn-primary">Démarrer gratuitement →</a>
+        <a href="#comment" class="btn-secondary">▶ Voir comment ça marche</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">3<span>min</span></div>
+          <div class="stat-label">Pour créer votre compte</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0<span> app</span></div>
+          <div class="stat-label">À télécharger pour vos clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100<span>%</span></div>
+          <div class="stat-label">Personnalisable à votre image</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Liberté sur vos tarifs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLÈME -->
+  <section class="problem" id="probleme">
+    <div class="container">
+      <span class="section-tag">Le problème</span>
+      <h2 class="section-title">Vous gérez encore vos livraisons sur WhatsApp ?</h2>
+      <p class="section-sub">Vous n'êtes pas seul. La majorité des agences de livraison en Afrique font face aux mêmes difficultés chaque jour.</p>
+      <div class="problem-grid">
+        <div class="problem-list">
+          <div class="problem-item">
+            <div class="problem-icon">📱</div>
+            <div class="problem-text">
+              <h4>Gestion sur WhatsApp</h4>
+              <p>Les commandes arrivent en vrac, aucun suivi structuré, tout se perd.</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <div class="problem-icon">🗺️</div>
+            <div class="problem-text">
+              <h4>Livreurs non suivis</h4>
+              <p>Impossible de savoir où en est chaque livreur en temps réel.</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <div class="problem-icon">💸</div>
+            <div class="problem-text">
+              <h4>Gestion financière floue</h4>
+              <p>Aucune traçabilité des paiements, des tarifs appliqués, des revenus réels.</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <div class="problem-icon">😤</div>
+            <div class="problem-text">
+              <h4>Clients insatisfaits</h4>
+              <p>Pas de suivi pour le client, manque de transparence, confiance perdue.</p>
+            </div>
+          </div>
+        </div>
+        <div class="problem-visual">
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">La réalité aujourd'hui</p>
+          <div class="whatsapp-mock">
+            <div class="wm-header">
+              <div class="wm-avatar">🚚</div>
+              <div>
+                <div class="wm-name">Groupe Livreurs 📦</div>
+                <div class="wm-status">12 participants</div>
+              </div>
+            </div>
+            <div class="wm-msg">📍 Akossi: Je suis où là patron ?</div>
+            <div class="wm-msg">Boss: Vas chez Mme Adjobi à Akpakpa</div>
+            <div class="wm-msg">📍 Koffi: J'ai livré les 3 colis. Ou je vais après ?</div>
+            <div class="wm-msg">Client: Mon colis est arrivé ?? 😤</div>
+            <div class="wm-msg">Boss: Attends... Qui a le colis de Fidjrossè ?</div>
+          </div>
+          <div class="problem-label">❌ Chaos total — aucune visibilité</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FONCTIONNALITÉS -->
+  <section id="fonctionnalites">
+    <div class="container">
+      <span class="section-tag">La solution</span>
+      <h2 class="section-title">Tout ce dont votre agence a besoin</h2>
+      <p class="section-sub">Un seul outil, complet, simple, mobile — conçu pour les réalités africaines.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Dashboard temps réel</h3>
+          <p>Toutes vos livraisons du jour, vos livreurs actifs et vos performances sur un seul écran clair.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛵</div>
+          <h3>Gestion des livreurs</h3>
+          <p>Ajoutez vos livreurs, suivez leur disponibilité, consultez leurs performances et historiques.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Suivi des commandes</h3>
+          <p>Chaque commande a un statut précis. Vos clients suivent leur colis via un lien sans application.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Lien public de commande</h3>
+          <p>Partagez votre lien sur WhatsApp ou Instagram. Vos clients commandent en 2 minutes sans créer de compte.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>White Label complet</h3>
+          <p>Logo, nom, slogan, couleurs : votre espace LiVRMe est entièrement à votre image de marque.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Tarifs 100% libres</h3>
+          <p>Zones, tranches kilométriques, suppléments express — vous définissez vos prix selon vos règles.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📲</div>
+          <h3>Notifications automatiques</h3>
+          <p>SMS et WhatsApp envoyés automatiquement à vos clients à chaque étape — au nom de votre agence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📸</div>
+          <h3>Preuves de livraison</h3>
+          <p>Vos livreurs prennent une photo à la remise du colis. Preuve horodatée disponible pour toujours.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Statistiques & exports</h3>
+          <p>Analysez vos données, identifiez vos meilleures zones et exportez tout en CSV pour votre comptabilité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="how" id="comment">
+    <div class="container">
+      <span class="section-tag">Comment ça marche</span>
+      <h2 class="section-title">Opérationnel en moins de 10 minutes</h2>
+      <p class="section-sub">Pas de formation, pas de technicien. Vous créez votre compte et vous commencez.</p>
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>Créez votre compte</h4>
+          <p>Inscrivez votre agence en 3 minutes. Nom, email, téléphone — c'est tout.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>Personnalisez</h4>
+          <p>Ajoutez votre logo, vos couleurs et définissez votre grille tarifaire.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>Ajoutez vos livreurs</h4>
+          <p>Créez les profils de vos livreurs. Ils reçoivent leur accès immédiatement.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h4>Commencez à livrer</h4>
+          <p>Partagez votre lien public. Les commandes arrivent directement dans votre dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE LABEL -->
+  <section id="whitelabel">
+    <div class="container">
+      <span class="section-tag">White Label</span>
+      <h2 class="section-title">Votre plateforme, votre identité</h2>
+      <p class="section-sub">Chaque agence a son propre espace aux couleurs de sa marque. Vos clients ne voient que vous.</p>
+      <div class="whitelabel-showcase">
+        <div class="wl-card">
+          <div class="wl-header" style="background:#E63946;">
+            <div class="wl-logo" style="background:rgba(255,255,255,0.2);">⚡</div>
+            <div>
+              <div class="wl-brand-name">Flash Livraison</div>
+              <div class="wl-slogan">En un éclair, partout à Cotonou</div>
+            </div>
+          </div>
+          <div class="wl-body">
+            <div class="wl-stat-row">
+              <div class="wl-stat">
+                <div class="wl-stat-n" style="color:#E63946;">24</div>
+                <div class="wl-stat-l">Livraisons aujourd'hui</div>
+              </div>
+              <div class="wl-stat">
+                <div class="wl-stat-n" style="color:#E63946;">8</div>
+                <div class="wl-stat-l">Livreurs actifs</div>
+              </div>
+            </div>
+          </div>
+          <div class="powered">Propulsé par <span>LiVRMe</span></div>
+        </div>
+        <div class="wl-card">
+          <div class="wl-header" style="background:#2D6A4F;">
+            <div class="wl-logo" style="background:rgba(255,255,255,0.2);">📦</div>
+            <div>
+              <div class="wl-brand-name">Colis Express BJ</div>
+              <div class="wl-slogan">Votre confiance, notre priorité</div>
+            </div>
+          </div>
+          <div class="wl-body">
+            <div class="wl-stat-row">
+              <div class="wl-stat">
+                <div class="wl-stat-n" style="color:#2D6A4F;">37</div>
+                <div class="wl-stat-l">Livraisons aujourd'hui</div>
+              </div>
+              <div class="wl-stat">
+                <div class="wl-stat-n" style="color:#2D6A4F;">12</div>
+                <div class="wl-stat-l">Livreurs actifs</div>
+              </div>
+            </div>
+          </div>
+          <div class="powered">Propulsé par <span>LiVRMe</span></div>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--text-muted);font-size:0.85rem;margin-top:24px;">
+        Deux agences différentes. Un seul système. La mention <strong style="color:var(--brand)">«&nbsp;Propulsé par LiVRMe&nbsp;»</strong> reste discrètement présente sur toutes les interfaces publiques.
+      </p>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs" style="background:var(--dark-2);">
+    <div class="container">
+      <span class="section-tag">Tarifs</span>
+      <h2 class="section-title">Simple, transparent, sans surprise</h2>
+      <p class="section-sub">Choisissez le plan qui correspond à la taille de votre agence. Changez à tout moment.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">15 000 <span>FCFA / mois</span></div>
+          <div class="plan-desc">Idéal pour démarrer et tester LiVRMe avec votre équipe.</div>
+          <ul class="plan-features">
+            <li>5 livreurs maximum</li>
+            <li>200 commandes / mois</li>
+            <li>Dashboard basique</li>
+            <li>Notifications SMS</li>
+            <li>Lien public client</li>
+            <li class="no">WhatsApp notifications</li>
+            <li class="no">White Label complet</li>
+            <li class="no">Export CSV</li>
+          </ul>
+          <a href="#inscription" class="btn-plan btn-plan-outline">Commencer →</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="featured-badge">⭐ Le plus populaire</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">30 000 <span>FCFA / mois</span></div>
+          <div class="plan-desc">Pour les agences en croissance qui veulent professionnaliser.</div>
+          <ul class="plan-features">
+            <li>15 livreurs maximum</li>
+            <li>1 000 commandes / mois</li>
+            <li>Dashboard complet</li>
+            <li>SMS + WhatsApp</li>
+            <li>Lien public client</li>
+            <li>White Label complet</li>
+            <li>Export CSV</li>
+            <li class="no">API boutiques</li>
+          </ul>
+          <a href="#inscription" class="btn-plan btn-plan-primary">Commencer →</a>
+        </div>
+        <div class="pricing-card">
+          <div class="plan-name">Business</div>
+          <div class="plan-price">60 000 <span>FCFA / mois</span></div>
+          <div class="plan-desc">Pour les grandes agences qui ont besoin de tout, sans limite.</div>
+          <ul class="plan-features">
+            <li>Livreurs illimités</li>
+            <li>Commandes illimitées</li>
+            <li>Dashboard avancé + stats</li>
+            <li>SMS + WhatsApp prioritaire</li>
+            <li>White Label + retrait mention LiVRMe</li>
+            <li>Export CSV + PDF</li>
+            <li>API boutiques en ligne</li>
+            <li>Support prioritaire</li>
+          </ul>
+          <a href="#inscription" class="btn-plan btn-plan-outline">Commencer →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPTION -->
+  <section class="signup" id="inscription">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag">Rejoindre LiVRMe</span>
+      <h2 class="section-title">Prêt à digitaliser votre agence ?</h2>
+      <p class="section-sub" style="margin:0 auto;">Laissez-nous vos informations. Notre équipe vous contacte sous 24h pour configurer votre espace.</p>
+      <div class="signup-box">
+        <div id="formContainer">
+          <h3>Démarrez gratuitement</h3>
+          <p>2 mois offerts pour les premières agences pilotes au Bénin.</p>
+          <form id="signupForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Votre nom complet</label>
+                <input type="text" placeholder="Ex: Kofi Mensah" required />
+              </div>
+              <div class="form-group">
+                <label>Nom de votre agence</label>
+                <input type="text" placeholder="Ex: Flash Livraison" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Numéro WhatsApp</label>
+                <input type="tel" placeholder="+229 XX XX XX XX" required />
+              </div>
+              <div class="form-group">
+                <label>Email professionnel</label>
+                <input type="email" placeholder="contact@votreagence.com" />
+              </div>
+            </div>
+            <div class="form-row single">
+              <div class="form-group">
+                <label>Nombre de livreurs actuels</label>
+                <select required>
+                  <option value="" disabled selected>Choisir...</option>
+                  <option>1 à 3 livreurs</option>
+                  <option>4 à 10 livreurs</option>
+                  <option>11 à 20 livreurs</option>
+                  <option>Plus de 20 livreurs</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="form-submit">Soumettre ma demande →</button>
+          </form>
+          <p class="form-note">🔒 Vos données sont confidentielles. Aucun spam, promis.</p>
+        </div>
+        <div class="success-msg" id="successMsg">
+          <div class="checkmark">✅</div>
+          <h4>Demande envoyée !</h4>
+          <p>Merci pour votre intérêt. Notre équipe LiVRMe vous contactera sur WhatsApp dans les 24 heures pour configurer votre espace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="LiVRMe2.png" alt="LiVRMe" height="36" />
+          <p>L'infrastructure numérique de la livraison urbaine en Afrique francophone. Gérez tout, de partout, à votre image.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Produit</h4>
+          <ul>
+            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#comment">Comment ça marche</a></li>
+            <li><a href="#whitelabel">White Label</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/2290150152516">WhatsApp Business</a></li>
+            <li><a href="mailto:contact.livrme@gmail.com">contact.livrme@gmail.com</a></li>
+            <li><a href="https://facebook.com/Livrme">Facebook LiVRMe</a></li>
+            <li><a href="htps://instagram.com/Livrme">Instagram LiVRMe</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span>LiVRMe</span> — L'infrastructure numérique de la livraison urbaine en Afrique. Tous droits réservés.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/Livrme" class="social-btn">f</a>
+          <a href="https://www.linkedin.com/in/gildas-hounsa224" class="social-btn">in</a>
+          <a href="https://wa.me/2290150152516" class="social-btn">📱</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.style.padding = window.scrollY > 50 ? '14px 40px' : '20px 40px';
+    });
+
+    // Mobile menu
+    function toggleMenu() {
+      const links = document.getElementById('navLinks');
+      links.classList.toggle('open');
+    }
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formContainer').style.display = 'none';
+      const msg = document.getElementById('successMsg');
+      msg.style.display = 'block';
+    }
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .step-card, .pricing-card, .problem-item, .wl-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease, border-color 0.3s';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
